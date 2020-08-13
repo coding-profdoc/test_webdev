@@ -6,7 +6,7 @@
 html, body, #app {
     margin: 0;
     height: 100%;
-    color: #000;
+    color: black;
 }
 
 a {
@@ -19,8 +19,8 @@ a {
     padding: 10px 15px;
     border-radius: 100px;
     font-weight: bold;
-    background-color: #3498db;
-    color: #fff;
+    background-color: cadetblue;
+    color:white;
 }
 
 #app {
@@ -33,10 +33,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-
-    background-color: #000;
-    color: #fff;
-}
+    background-color: black;
+    color: white;
+} 
 
 header .brand {
     display: flex;
@@ -53,7 +52,7 @@ header .brand .brand-logo {
 
 header nav {
     font-size: 14px;
-    display: flex;
+    display: flex; 
 }
 
 nav .nav-item {
@@ -62,28 +61,26 @@ nav .nav-item {
 
 .nav-item.nav-icon {
     margin: 5px;
-    height: 30px;
     width: 30px;
+    height: 30px;
     background-image: url("http://placekitten.com/30/30");
-    background-repeat: no-repeat;
 }
 
 main {
     flex-grow: 1;
-    padding: 30px;
-    background-color: #7f8c8d;
+    padding:30px;
+    background-color: grey;
 }
 
 main .schedule {
     display: flex;
     justify-content: flex-end;
-
-    padding: 70px 30px;
-
-    font-size: 32px;
-    color: #fff;
-    background-image: url("https://placehold.it/1000x500");
+    padding: 50px;
+    background-image: url("http://placekitten.com/1000/500");
     background-size: cover;
+    font-size: large;
+    font-weight: bold;
+    color: white;
 }
 
 main .events {
@@ -93,7 +90,7 @@ main .events {
 }
 
 .events .event {
-    background-color: #fff;
+    background-color: white;
     width: 200px;
     min-width: 200px;
     margin: 10px;
@@ -105,29 +102,29 @@ main .events {
 
 .event .event-img {
     height: 200px;
-    background-image: url("https://placehold.it/200x200");
+    background-image: url("http://placekitten.com/200/200");
     background-size: cover;
 }
 
-.event .event-text {
+.event .event-txt {
     padding: 10px;
     display: flex;
     flex-direction: column;
+
+    font-size: medium;
+    font-weight: bold;
 }
 
 .smalltext {
     font-size: 13px;
+    padding: 10px;
 }
 
 .event .event-name {
-    font-size: 22px;
-    padding: 5px 0;
+    font-size: medium;
+    padding:15px 0;
 }
 
 .event .event-desc {
     padding: 10px 0;
-}
-
-.event .button {
-    background-color: green;
 }
