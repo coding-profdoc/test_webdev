@@ -6,11 +6,11 @@
 html, body, #app {
     margin: 0;
     height: 100%;
-    color: black;
+    color: #000000;
 }
 
 a {
-    text-decoration: none;
+    text-decoration: transparent;
     color: inherit;
 }
 
@@ -19,8 +19,9 @@ a {
     padding: 10px 15px;
     border-radius: 100px;
     font-weight: bold;
-    background-color: cadetblue;
-    color:white;
+    background-color: #000000;
+    color:#FFFFFF;
+
 }
 
 #app {
@@ -33,8 +34,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    background-color: black;
-    color: white;
+    background-color:#004488;
+    color: #FFFFFF;
+
 } 
 
 header .brand {
@@ -47,12 +49,19 @@ header .brand .brand-logo {
     width: 60px;
     height: 60px;
     margin-right: 5px;
-    background-image: url("http://placekitten.com/60/60");
+    background-image: url("https://www.shareicon.net/data/128x128/2015/11/06/667692_music_512x512.png");
+    background-size: cover;
 }
 
-header nav {
+header .brand .brand-txt {
+    color:#2a2b40;
+    margin-left: 5px;
+    font-size: larger;
+}
+
+nav {
     font-size: 14px;
-    display: flex; 
+    display: flex;
 }
 
 nav .nav-item {
@@ -63,54 +72,56 @@ nav .nav-item {
     margin: 5px;
     width: 30px;
     height: 30px;
-    background-image: url("http://placekitten.com/30/30");
+    background-image: url("https://www.shareicon.net/data/128x128/2015/11/10/669790_logo_512x512.png");
+    background-size: cover;
 }
 
 main {
     flex-grow: 1;
     padding:30px;
-    background-color: grey;
+    background-color:#004488;
 }
 
 main .schedule {
     display: flex;
     justify-content: flex-end;
-    padding: 50px;
-    background-image: url("http://placekitten.com/1000/500");
-    background-size: cover;
+    padding: 70px 30px;
+    background-image: url("https://silencenogood.net/wordpress/wp-content/uploads/2016/10/Goldlink-banner.jpg");
+    background-size: initial;
     font-size: large;
     font-weight: bold;
-    color: white;
+    color: #FFFFFF;
 }
 
 main .events {
     display: flex;
-    flex-wrap: wrap;
+    flex: wrap;
+    justify-content: space-evenly;
     padding: 50px 0;
 }
 
 .events .event {
-    background-color: white;
+    background-color: #FFFFFF;
     width: 200px;
     min-width: 200px;
     margin: 10px;
 }
 
 .events .event:first-child {
-    margin-left: 0;
+    background-color: #2a2b40;
+    color: #FFFFFF;
 }
 
 .event .event-img {
     height: 200px;
-    background-image: url("http://placekitten.com/200/200");
+    background-image: url("https://secureimg.stitcher.com/feedimagesplain328/369400.jpg");
     background-size: cover;
 }
 
 .event .event-txt {
-    padding: 10px;
     display: flex;
     flex-direction: column;
-
+    padding: 10px;
     font-size: medium;
     font-weight: bold;
 }
@@ -122,7 +133,7 @@ main .events {
 
 .event .event-name {
     font-size: medium;
-    padding:15px 0;
+    padding: 5px 0;
 }
 
 .event .event-desc {
