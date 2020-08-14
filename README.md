@@ -1,4 +1,4 @@
 # test_webdev
-test webdev x)
+test webdev for a fake simplistic website.
 
-leçon 5 de neolectron : je ne comprends pas ce qui cloche.
+not bad, thx to help from neolectron (on github) and his community.
